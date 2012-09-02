@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,700&subset=latin,cyrillic);
+@import url(misc.css);
 
 
 html,
@@ -31,22 +32,13 @@ a {
 	color: #23AEEF;
 }
 
-.cf:before,
-.cf:after {
-    content: " ";
-    display: table;
-}
-.cf:after {
-    clear: both;
-}
-.cf {
-    *zoom: 1;
-}
-
-.column {
-	position: relative;
-	float: left;
-	margin-right: -100%;
+#header.fixed {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	margin-left: -500px;
+	z-index: 1;
+	background: #000 url('../img/asfalt.png');
 }
 
 #content,
@@ -54,8 +46,15 @@ a {
 #footer {
 	position: relative;
 	width: 1000px;
+	margin: 2em auto;
+}
+
+#header {
 	margin: 0 auto;
-	padding: 2em 0;
+}
+
+.header-wrap {
+	margin: 2em 0;
 }
 
 #content {
@@ -84,10 +83,24 @@ a {
 .navigation-item {
 	font-size: 0.5em;
 	display: inline-block;
+	padding: 0.2em 0.3em 0.3em 0.3em;
+	border-radius: 6px;
+}
+.navigation-item.active {
+	background: #23AEEF;
+}
+.navigation-item.active a {
+	color: #fff;
+	text-decoration: none;
+	cursor: default;
 }
 
+/* Section */
+.section {
+	display: none;
+}
 
-
+/* Questions */
 .questions {
 	list-style: none;
 	margin: 0;
@@ -108,8 +121,7 @@ a {
 	vertical-align: top;
 }
 
-
-
+/* Footer */
 #footer {
 	position: relative;
 	margin-top: -70px;
