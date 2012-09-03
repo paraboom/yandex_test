@@ -180,7 +180,9 @@ ul .works-item:hover p {
 	box-shadow: inset 3px 3px 1px rgba(0,0,0,0.15), inset -1px -1px 0px rgba(255,255,255,0.15);
 }
 
+
 /* Footer */
+
 #footer {
 	position: relative;
 	margin-top: -70px;
