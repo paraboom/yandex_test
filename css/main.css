@@ -162,6 +162,24 @@ ul .works-item:hover p {
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
+/* Tech questions */
+
+.tech-questions-item {
+	margin: 0 0 1.5em 0;
+}
+
+.tech-questions-item .question {
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.tech-questions-item .answer {
+	padding: 1em;
+	background: rgba(255,255,255,0.3);
+	border-radius: 8px;
+	box-shadow: inset 3px 3px 1px rgba(0,0,0,0.15), inset -1px -1px 0px rgba(255,255,255,0.15);
+}
+
 /* Footer */
 #footer {
 	position: relative;
