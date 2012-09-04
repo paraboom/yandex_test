@@ -43,3 +43,14 @@ $(function(){
 	$(window).trigger('hashchange');
 
 });
+
+/* Loading js tech file */
+$(function(){
+	$.get('js/cars.js', function(data){
+		data = data.replace(/</g,'&lt;');
+		var div = $('<code data-language="javascript">' + data + '</code>');
+		Rainbow.color(div, function(){
+			$('#js_code').html(div);
+		});
+	}, 'text');
+})

@@ -180,6 +180,14 @@ ul .works-item:hover p {
 	box-shadow: inset 3px 3px 1px rgba(0,0,0,0.15), inset -1px -1px 0px rgba(255,255,255,0.15);
 }
 
+.tech-questions-item .js-code {
+	background: #F8F8F8;
+}
+
+#js_code {
+	border: none;
+}
+
 
 /* Footer */
 
